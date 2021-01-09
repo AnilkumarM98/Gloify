@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Golify</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+
+  <body style="background-color: lightgray;">
+    <nav>
+      <ul>
+        <li class="logo">InventSuite</li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <li class="search-icon">
+            <input type="search" placeholder="Search">
+            <label class="icon">
+              <span class="fas fa-search"></span>
+            </label>
+        </li>
+        <div class="dropdown">
+            <button class="dropbtn">Golify</button>
+            <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            </div>
+          </div>
+        <div class="items">
+          <li><a href="#"><i class="fas fa-bell" style="color:black"></i></a></li>
+          <li><a href="#"><i class="fas fa-user-circle" style="color:black"></i></a></li>
+        </div>
+      </ul>
+    </nav>
+
+
+    <div class="sidebar">
+        <a href=""><i class="fas fa-home" style="font-size:24px;color:black;"></i>Home</a>
+        <a href=""><i class="fas fa-hand-holding" style="font-size:24px;color:black;"></i>Order</a>
+        <a href=""><i class="fas fa-box" style="font-size:24px;color:black;"></i>Product</a>
+        <a href=""><i class="fas fa-user-friends" style="font-size:24px;color:black;"></i>Customers</a>
+        <a href=""><i class="fas fa-warehouse" style="font-size:24px;color:black;"></i>Warehouse</a>
+     </div>
+
+     <div class="container" style="width:750px;">
+         <h4>Product</h4>
+         <h2>Add Product</h2>
+         <label for="fname" style="color:black">First name</label><br>
+         <input type="text" id="fname" name="fname"><br>
+         <label for="description" style="color:black">Description</label><br>
+         <textarea id="description" name="description"></textarea>
+     </div>
+
+     <div class="container1">
+       <h2>Add Product</h2>
+       <img src="train.jpg" alt="train" width="250" height="250">
+       <img src="tab.jpg" alt="tab" width="200" height="200">
+       <img src="sanitizer.jpg" alt="sanitizer" width="200" height="200">
+       <img src="gfuel.png" alt="gfuel" width="150" height="150">
+       <img src="laptop.jpg" alt="laptop" width="150" height="150">
+       <img src="addmedia.png" alt="addmedia" width="150" height="150">
+     </div>
+
+     <div class="container2">
+       <h2>Inventory</h2>
+       <label for="sku" style="color:black">SKU (Stock Keeping Unit)</label><br>
+         <input type="text" id="sku" name="sku"><br>
+       <label for="bar" style="color:black">Barcode (ISBN,UPC,GTIN,etc.)</label><br>
+         <input type="text" id="bar" name="bar"><br>
+     </div>
+
+     <div class="container3">
+       <div class="variants">
+       <h2>Variants</h2>
+       <input type="checkbox" id="product" name="product" value="product">
+       <label for="product" style="color:black">This product have multiple variants</label><br>
+       <h4>Option 1</h4>
+       <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Size
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Small</a>
+          <a class="dropdown-item" href="#">Medium</a>
+          <a class="dropdown-item" href="#">Large</a>
+        </div>
+      </div>
+      <br>
+      <label for="description" style="float:right"></label><br>
+      <textarea id="description" name="description"></textarea>
+      <br>
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Color
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Red</a>
+          <a class="dropdown-item" href="#">Green</a>
+          <a class="dropdown-item" href="#">Blue</a>
+        </div>
+      </div>
+      <input type="text" id="Color" name="color" placeholder="separate option with a comma"><br>
+      <table>
+        <tr>
+          <th>Variants</th>
+          <th>Price</th> 
+          <th>Vendor</th>
+          <th>Quantity</th>
+          <th>SKU</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+     </div>
+
+     <div class="container4">
+       <h2>Quantity</h2>
+       <label for="bar" style="color:black">Available</label><br>
+       <input type="text" id="bar" name="bar"><br>
+       <br>
+       <h2>Pricing</h2>
+       <label for="bar" style="color:black">Price</label><br>
+       <input type="text" id="bar" name="bar"><br>
+       <label for="bar" style="color:black">Cost per item</label><br>
+       <input type="text" id="bar" name="bar"><br>
+       <input type="checkbox" id="product" name="product" value="product">
+       <label for="product" style="color:black">Charge tax on this product</label><br>
+       <br>
+       <h2>Product Details</h2>
+       <label for="bar" style="color:black">Product type</label><br>
+       <input type="text" id="bar" name="bar"><br>
+       <br>
+       <h2>Tags</h2>
+       <label for="bar" style="color:black">Type Tags</label><br>
+       <input type="text" id="bar" name="bar"><br>
+       <br>
+     </div>
+
+     <footer>
+      <button class="button1">Cancel</button>
+      <button class="button2">Add Product</button>
+     </footer>
+
+   </body>
+
+    <script>
+      $('nav ul li.btn span').click(function(){
+        $('nav ul div.items').toggleClass("show");
+        $('nav ul li.btn span').toggleClass("show");
+      });
+    </script>
+
+  </body>
+</html>
